@@ -24,7 +24,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIFont (FontAwesome)
+@interface UIFont (XBIconFont)
 
 /**
  @abstract Returns the FontAwesome iconic font.

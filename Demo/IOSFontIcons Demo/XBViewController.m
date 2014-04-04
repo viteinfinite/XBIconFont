@@ -1,20 +1,20 @@
 //
-//  FAViewController.m
+//  XBViewController.m
 //  FontAwesome-iOS Demo
 //
 //  Created by Alex Usbergo on 12/30/12.
 //  Copyright (c) 2012 Alex Usbergo. All rights reserved.
 //
 
-#import "FAViewController.h"
-#import "NSString+FontAwesome.h"
-#import "FAImageView.h"
+#import "XBViewController.h"
+#import "NSString+XBIconFont.h"
+#import "XBImageView.h"
 
-@interface FAViewController ()
+@interface XBViewController ()
 @property (nonatomic, strong) NSMutableArray *stars;
 @end
 
-@implementation FAViewController
+@implementation XBViewController
 
 #define kStarsNumber 5
 
@@ -34,15 +34,15 @@
         star.frame = CGRectMake(60.f+(i *40.f), 200.f, 40.f, 40.f);
         star.titleLabel.font = [UIFont fontWithName:kFontAwesomeFamilyName size:35];
         star.titleLabel.shadowOffset = CGSizeMake(0, -1);
-        [star setTitle:[NSString fontAwesomeIconStringForEnum:FAStarO] forState:UIControlStateNormal];
-        [star setTitle:[NSString fontAwesomeIconStringForEnum:FAStar] forState:UIControlStateSelected];
+        [star setTitle:[NSString fontAwesomeIconStringForEnum:XBIFStar] forState:UIControlStateNormal];
+        [star setTitle:[NSString fontAwesomeIconStringForEnum:XBIFStar] forState:UIControlStateSelected];
         [star setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
         [star addTarget:self action:@selector(didSelectStar:) forControlEvents:UIControlEventTouchDown];
         [self.view addSubview:star];
         self.stars[i] = star;
     }
     
-    FAImageView *imageView = [[FAImageView alloc] initWithFrame:CGRectMake(0.f, 0.f, 100.f, 100.f)];
+    XBImageView *imageView = [[XBImageView alloc] initWithFrame:CGRectMake(0.f, 0.f, 100.f, 100.f)];
     imageView.image = nil;    
 
     

@@ -1,5 +1,5 @@
 //
-//  FATableViewController.h
+//  XBTableViewController.h
 //  FontAwesome-iOS Demo
 //
 //  Created by Rune Madsen on 2013-01-09.
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FATableViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
+@interface XBTableViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 
 @property (nonatomic, strong) NSArray *iconIdentiferArray;
 @property (nonatomic, strong) NSArray *iconSearchArray;

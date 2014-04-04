@@ -1,5 +1,5 @@
 //
-//  FAImageView.m
+//  XBImageView.m
 //
 //  Copyright (c) 2012 Alex Usbergo. All rights reserved.
 //
@@ -27,9 +27,9 @@
 
 
 #import <UIKit/UIKit.h>
-#import "NSString+FontAwesome.h"
+#import "NSString+XBIconFont.h"
 
-@interface FAImageView : UIImageView
+@interface XBImageView : UIImageView
 
 /* The background color for the default view displayed when the image is missing */
 @property (nonatomic, strong) UIColor *defaultIconColor UI_APPEARANCE_SELECTOR;

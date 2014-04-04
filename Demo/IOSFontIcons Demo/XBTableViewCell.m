@@ -1,5 +1,5 @@
 //
-//  FATableViewCell.m
+//  XBTableViewCell.m
 //  FontAwesome-iOS Demo
 //
 //  Created by Rune Madsen on 2013-01-09.
@@ -7,9 +7,9 @@
 //  runmad.com
 //
 
-#import "FATableViewCell.h"
+#import "XBTableViewCell.h"
 
-@implementation FATableViewCell
+@implementation XBTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

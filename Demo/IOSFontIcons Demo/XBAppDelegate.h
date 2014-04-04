@@ -1,5 +1,5 @@
 //
-//  FAAppDelegate.h
+//  XBAppDelegate.h
 //  FontAwesome-iOS Demo
 //
 //  Created by Alex Usbergo on 12/30/12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FAAppDelegate : UIResponder <UIApplicationDelegate>
+@interface XBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UITabBarController *tabBarController;

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FontAwesome-iOS Demo.xcodeproj">
+      location = "self:IOSFontIcons Demo.xcodeproj">
    </FileRef>
 </Workspace>

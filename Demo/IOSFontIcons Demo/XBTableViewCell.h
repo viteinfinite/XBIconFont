@@ -1,5 +1,5 @@
 //
-//  FATableViewCell.h
+//  XBTableViewCell.h
 //  FontAwesome-iOS Demo
 //
 //  Created by Rune Madsen on 2013-01-09.
@@ -9,6 +9,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FATableViewCell : UITableViewCell
+@interface XBTableViewCell : UITableViewCell
 
 @end

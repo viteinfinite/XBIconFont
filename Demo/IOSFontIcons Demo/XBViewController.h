@@ -1,5 +1,5 @@
 //
-//  FAViewController.h
+//  XBViewController.h
 //  FontAwesome-iOS Demo
 //
 //  Created by Alex Usbergo on 12/30/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FAViewController : UIViewController
+@interface XBViewController : UIViewController
 
 @end

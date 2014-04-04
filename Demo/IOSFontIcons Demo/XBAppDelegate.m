@@ -1,24 +1,24 @@
 //
-//  FAAppDelegate.m
+//  XBAppDelegate.m
 //  FontAwesome-iOS Demo
 //
 //  Created by Alex Usbergo on 12/30/12.
 //  Copyright (c) 2012 Alex Usbergo. All rights reserved.
 //
 
-#import "FAAppDelegate.h"
-#import "FAViewController.h"
-#import "FATableViewController.h"
+#import "XBAppDelegate.h"
+#import "XBViewController.h"
+#import "XBTableViewController.h"
 
-@implementation FAAppDelegate
+@implementation XBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.tabBarController = [[UITabBarController alloc] init];
-    FATableViewController *tableViewController = [[FATableViewController alloc] init];
+    XBTableViewController *tableViewController = [[XBTableViewController alloc] init];
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
-    FAViewController *viewController = [[FAViewController alloc] init];
+    XBViewController *viewController = [[XBViewController alloc] init];
     [self.tabBarController setViewControllers:@[navigationController, viewController]];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

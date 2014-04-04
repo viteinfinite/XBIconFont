@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Alex Usbergo. All rights reserved.
 //
 
-#import "UIFont+FontAwesome.h"
-#import "NSString+FontAwesome.h"
+#import "UIFont+XBIconFont.h"
+#import "NSString+XBIconFont.h"
 
-@implementation UIFont (FontAwesome)
+@implementation UIFont (XBIconFont)
 
 #pragma mark - Public API
 + (UIFont*)fontAwesomeFontOfSize:(CGFloat)size {

@@ -1,5 +1,5 @@
 //
-//  FAImageView.m
+//  XBImageView.m
 //
 //  Copyright (c) 2012 Alex Usbergo. All rights reserved.
 //
@@ -26,10 +26,10 @@
 //  if the image is missing
 
 
-#import "FAImageView.h"
-#import "UIFont+FontAwesome.h"
+#import "XBImageView.h"
+#import "UIFont+XBIconFont.h"
 
-@implementation FAImageView
+@implementation XBImageView
 
 /* When the image is set to nil the defaultView will be added as subview,
  * otherwise it will be removed */
@@ -51,8 +51,8 @@
     _defaultView = [[UILabel alloc] initWithFrame:self.bounds];
     _defaultView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    //The default icon is the ban icon
-    [self setDefaultIcon:FABan];
+    //The default icon is the star icon
+    [self setDefaultIcon:XBIFStar];
     
     _defaultView.font = [UIFont fontAwesomeFontOfSize:self.bounds.size.height];
     _defaultView.textAlignment = NSTextAlignmentCenter;
