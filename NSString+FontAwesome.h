@@ -398,7 +398,16 @@ typedef NS_ENUM(NSInteger, FAIcon) {
 	FAWheelchair,
 	FAVimeoSquare,
 	FATry,
-	FAPlusSquareO
+	FAPlusSquareO,
+    
+	FAIOS7Download,
+	FAIOS7Share,
+    FAIOS7Contacts,
+    FAIOS7Search,
+    FAIOS7Bookmarks,
+    FAIOS7Compose,
+    FAIOS7Undo,
+    FAIOS7Star
 };
 
 

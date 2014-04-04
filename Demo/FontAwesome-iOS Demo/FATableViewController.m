@@ -178,6 +178,15 @@
     static NSDictionary *icons;
 	if (nil == icons) {
         NSMutableDictionary *tmp = [[NSMutableDictionary alloc] init];
+        tmp[@"fa-ios7-download"]		= @(FAIOS7Download);
+        tmp[@"fa-ios7-share"]			= @(FAIOS7Share);
+        tmp[@"fa-ios7-contacts"]		= @(FAIOS7Contacts);
+		tmp[@"fa-ios7-search"]			= @(FAIOS7Search);
+        tmp[@"fa-ios7-bookmarks"]		= @(FAIOS7Bookmarks);
+        tmp[@"fa-ios7-compose"]			= @(FAIOS7Compose);
+        tmp[@"fa-ios7-undo"]			= @(FAIOS7Undo);
+        tmp[@"fa-ios7-star"]			= @(FAIOS7Star);
+        
         tmp[@"fa-glass"]				= @(FAGlass);
 		tmp[@"fa-music"]				= @(FAMusic);
 		tmp[@"fa-search"]				= @(FASearch);
