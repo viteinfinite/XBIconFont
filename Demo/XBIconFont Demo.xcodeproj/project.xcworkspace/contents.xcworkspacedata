@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:IOSFontIcons Demo.xcodeproj">
+      location = "self:XBIconFont Demo.xcodeproj">
    </FileRef>
 </Workspace>

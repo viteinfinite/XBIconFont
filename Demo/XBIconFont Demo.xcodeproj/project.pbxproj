@@ -19,21 +19,21 @@
 		16255F521690AF2A004B8154 /* XBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16255F511690AF2A004B8154 /* XBViewController.m */; };
 		16255F631690B09F004B8154 /* NSString+XBIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 16255F621690B086004B8154 /* NSString+XBIconFont.m */; };
 		16E3960116A7407B00BA7FAF /* UIFont+XBIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E3960016A7407B00BA7FAF /* UIFont+XBIconFont.m */; };
-		16E3960716A7441000BA7FAF /* XBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E3960616A7441000BA7FAF /* XBImageView.m */; };
-		2EE4452C8CFDAB7EF6CEC574 /* xbiconfont-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE44F7F87AA4C4236C1280B /* xbiconfont-regular.ttf */; };
+		16E3960716A7441000BA7FAF /* XBIconFontImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E3960616A7441000BA7FAF /* XBIconFontImageView.m */; };
+		42965A1418EEE16100090124 /* xbiconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42965A1318EEE16100090124 /* xbiconfont.ttf */; };
 		90F843A7169DC3A900C28AA3 /* XBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F843A6169DC3A900C28AA3 /* XBTableViewController.m */; };
 		90F843AB169DC46600C28AA3 /* XBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F843AA169DC46600C28AA3 /* XBTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16255F341690AF29004B8154 /* IOSFontIcons Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOSFontIcons Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16255F341690AF29004B8154 /* XBIconFont Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XBIconFont Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16255F381690AF29004B8154 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		16255F3A1690AF29004B8154 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		16255F3C1690AF29004B8154 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		16255F401690AF29004B8154 /* IOSFontIcons Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "IOSFontIcons Demo-Info.plist"; sourceTree = "<group>"; };
+		16255F401690AF29004B8154 /* XBIconFont Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "XBIconFont Demo-Info.plist"; sourceTree = "<group>"; };
 		16255F421690AF29004B8154 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		16255F441690AF29004B8154 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		16255F461690AF29004B8154 /* IOSFontIcons Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOSFontIcons Demo-Prefix.pch"; sourceTree = "<group>"; };
+		16255F461690AF29004B8154 /* XBIconFont Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XBIconFont Demo-Prefix.pch"; sourceTree = "<group>"; };
 		16255F471690AF29004B8154 /* XBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBAppDelegate.h; sourceTree = "<group>"; };
 		16255F481690AF29004B8154 /* XBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBAppDelegate.m; sourceTree = "<group>"; };
 		16255F4A1690AF29004B8154 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -45,9 +45,9 @@
 		16255F621690B086004B8154 /* NSString+XBIconFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+XBIconFont.m"; path = "../NSString+XBIconFont.m"; sourceTree = "<group>"; };
 		16E395FF16A7407B00BA7FAF /* UIFont+XBIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+XBIconFont.h"; path = "../UIFont+XBIconFont.h"; sourceTree = "<group>"; };
 		16E3960016A7407B00BA7FAF /* UIFont+XBIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+XBIconFont.m"; path = "../UIFont+XBIconFont.m"; sourceTree = "<group>"; };
-		16E3960516A7441000BA7FAF /* XBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBImageView.h; path = ../XBImageView.h; sourceTree = "<group>"; };
-		16E3960616A7441000BA7FAF /* XBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XBImageView.m; path = ../XBImageView.m; sourceTree = "<group>"; };
-		2EE44F7F87AA4C4236C1280B /* xbiconfont-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "xbiconfont-regular.ttf"; sourceTree = "<group>"; };
+		16E3960516A7441000BA7FAF /* XBIconFontImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBIconFontImageView.h; path = ../XBIconFontImageView.h; sourceTree = "<group>"; };
+		16E3960616A7441000BA7FAF /* XBIconFontImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XBIconFontImageView.m; path = ../XBIconFontImageView.m; sourceTree = "<group>"; };
+		42965A1318EEE16100090124 /* xbiconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = xbiconfont.ttf; sourceTree = "<group>"; };
 		90F843A5169DC3A900C28AA3 /* XBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBTableViewController.h; sourceTree = "<group>"; };
 		90F843A6169DC3A900C28AA3 /* XBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBTableViewController.m; sourceTree = "<group>"; };
 		90F843A9169DC46600C28AA3 /* XBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBTableViewCell.h; sourceTree = "<group>"; };
@@ -71,14 +71,14 @@
 		16255F291690AF29004B8154 = {
 			isa = PBXGroup;
 			children = (
-				16E3960516A7441000BA7FAF /* XBImageView.h */,
-				16E3960616A7441000BA7FAF /* XBImageView.m */,
+				16E3960516A7441000BA7FAF /* XBIconFontImageView.h */,
+				16E3960616A7441000BA7FAF /* XBIconFontImageView.m */,
 				16E395FF16A7407B00BA7FAF /* UIFont+XBIconFont.h */,
 				16E3960016A7407B00BA7FAF /* UIFont+XBIconFont.m */,
 				16255F611690B086004B8154 /* NSString+XBIconFont.h */,
 				16255F621690B086004B8154 /* NSString+XBIconFont.m */,
 				903F614216A0F81A00028D21 /* Resources */,
-				16255F3E1690AF29004B8154 /* IOSFontIcons Demo */,
+				16255F3E1690AF29004B8154 /* XBIconFont Demo */,
 				16255F371690AF29004B8154 /* Frameworks */,
 				16255F351690AF29004B8154 /* Products */,
 			);
@@ -87,7 +87,7 @@
 		16255F351690AF29004B8154 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16255F341690AF29004B8154 /* IOSFontIcons Demo.app */,
+				16255F341690AF29004B8154 /* XBIconFont Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +102,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		16255F3E1690AF29004B8154 /* IOSFontIcons Demo */ = {
+		16255F3E1690AF29004B8154 /* XBIconFont Demo */ = {
 			isa = PBXGroup;
 			children = (
 				16255F471690AF29004B8154 /* XBAppDelegate.h */,
@@ -115,7 +115,7 @@
 				90F843AA169DC46600C28AA3 /* XBTableViewCell.m */,
 				16255F3F1690AF29004B8154 /* Supporting Files */,
 			);
-			path = "IOSFontIcons Demo";
+			path = "XBIconFont Demo";
 			sourceTree = "<group>";
 		};
 		16255F3F1690AF29004B8154 /* Supporting Files */ = {
@@ -123,8 +123,8 @@
 			children = (
 				16255F411690AF29004B8154 /* InfoPlist.strings */,
 				16255F441690AF29004B8154 /* main.m */,
-				16255F401690AF29004B8154 /* IOSFontIcons Demo-Info.plist */,
-				16255F461690AF29004B8154 /* IOSFontIcons Demo-Prefix.pch */,
+				16255F401690AF29004B8154 /* XBIconFont Demo-Info.plist */,
+				16255F461690AF29004B8154 /* XBIconFont Demo-Prefix.pch */,
 				16255F4A1690AF29004B8154 /* Default.png */,
 				16255F4C1690AF29004B8154 /* Default@2x.png */,
 				16255F4E1690AF29004B8154 /* Default-568h@2x.png */,
@@ -135,7 +135,7 @@
 		903F614216A0F81A00028D21 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2EE44F7F87AA4C4236C1280B /* xbiconfont-regular.ttf */,
+				42965A1318EEE16100090124 /* xbiconfont.ttf */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -144,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		16255F331690AF29004B8154 /* IOSFontIcons Demo */ = {
+		16255F331690AF29004B8154 /* XBIconFont Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16255F5B1690AF2A004B8154 /* Build configuration list for PBXNativeTarget "IOSFontIcons Demo" */;
+			buildConfigurationList = 16255F5B1690AF2A004B8154 /* Build configuration list for PBXNativeTarget "XBIconFont Demo" */;
 			buildPhases = (
 				16255F301690AF29004B8154 /* Sources */,
 				16255F311690AF29004B8154 /* Frameworks */,
@@ -156,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = "IOSFontIcons Demo";
+			name = "XBIconFont Demo";
 			productName = "FontAwesome-iOS Demo";
-			productReference = 16255F341690AF29004B8154 /* IOSFontIcons Demo.app */;
+			productReference = 16255F341690AF29004B8154 /* XBIconFont Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,11 +167,11 @@
 		16255F2B1690AF29004B8154 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = FA;
+				CLASSPREFIX = XB;
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Alex Usbergo";
+				ORGANIZATIONNAME = "Xebia IT Architects";
 			};
-			buildConfigurationList = 16255F2E1690AF29004B8154 /* Build configuration list for PBXProject "IOSFontIcons Demo" */;
+			buildConfigurationList = 16255F2E1690AF29004B8154 /* Build configuration list for PBXProject "XBIconFont Demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16255F331690AF29004B8154 /* IOSFontIcons Demo */,
+				16255F331690AF29004B8154 /* XBIconFont Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -197,7 +197,7 @@
 				16255F4B1690AF29004B8154 /* Default.png in Resources */,
 				16255F4D1690AF29004B8154 /* Default@2x.png in Resources */,
 				16255F4F1690AF29004B8154 /* Default-568h@2x.png in Resources */,
-				2EE4452C8CFDAB7EF6CEC574 /* xbiconfont-regular.ttf in Resources */,
+				42965A1418EEE16100090124 /* xbiconfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 				90F843A7169DC3A900C28AA3 /* XBTableViewController.m in Sources */,
 				90F843AB169DC46600C28AA3 /* XBTableViewCell.m in Sources */,
 				16E3960116A7407B00BA7FAF /* UIFont+XBIconFont.m in Sources */,
-				16E3960716A7441000BA7FAF /* XBImageView.m in Sources */,
+				16E3960716A7441000BA7FAF /* XBIconFontImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IOSFontIcons Demo/IOSFontIcons Demo-Prefix.pch";
-				INFOPLIST_FILE = "IOSFontIcons Demo/IOSFontIcons Demo-Info.plist";
-				PRODUCT_NAME = "IOSFontIcons Demo";
+				GCC_PREFIX_HEADER = "XBIconFont Demo/XBIconFont Demo-Prefix.pch";
+				INFOPLIST_FILE = "XBIconFont Demo/XBIconFont Demo-Info.plist";
+				PRODUCT_NAME = "XBIconFont Demo";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -300,9 +300,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IOSFontIcons Demo/IOSFontIcons Demo-Prefix.pch";
-				INFOPLIST_FILE = "IOSFontIcons Demo/IOSFontIcons Demo-Info.plist";
-				PRODUCT_NAME = "IOSFontIcons Demo";
+				GCC_PREFIX_HEADER = "XBIconFont Demo/XBIconFont Demo-Prefix.pch";
+				INFOPLIST_FILE = "XBIconFont Demo/XBIconFont Demo-Info.plist";
+				PRODUCT_NAME = "XBIconFont Demo";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -310,7 +310,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16255F2E1690AF29004B8154 /* Build configuration list for PBXProject "IOSFontIcons Demo" */ = {
+		16255F2E1690AF29004B8154 /* Build configuration list for PBXProject "XBIconFont Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16255F591690AF2A004B8154 /* Debug */,
@@ -319,7 +319,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16255F5B1690AF2A004B8154 /* Build configuration list for PBXNativeTarget "IOSFontIcons Demo" */ = {
+		16255F5B1690AF2A004B8154 /* Build configuration list for PBXNativeTarget "XBIconFont Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16255F5C1690AF2A004B8154 /* Debug */,

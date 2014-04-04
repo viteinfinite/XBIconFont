@@ -22,14 +22,14 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //
 //  An UIImageView with the support of displaying
-//  a vectorial icon (by using the fontawesome iconic font)
+//  a vectorial icon (by using the iconic font)
 //  if the image is missing
 
 
-#import "XBImageView.h"
+#import "XBIconFontImageView.h"
 #import "UIFont+XBIconFont.h"
 
-@implementation XBImageView
+@implementation XBIconFontImageView
 
 /* When the image is set to nil the defaultView will be added as subview,
  * otherwise it will be removed */
@@ -54,7 +54,7 @@
     //The default icon is the star icon
     [self setDefaultIcon:XBIFStar];
     
-    _defaultView.font = [UIFont fontAwesomeFontOfSize:self.bounds.size.height];
+    _defaultView.font = [UIFont iconFontOfSize:self.bounds.size.height];
     _defaultView.textAlignment = NSTextAlignmentCenter;
     _defaultView.adjustsFontSizeToFitWidth = YES;
     
@@ -74,13 +74,13 @@
 
 - (void)setDefaultIconIdentifier:(NSString*)defaultIconIdentifier
 {
-    self.defaultIcon = [NSString fontAwesomeEnumForIconIdentifier:defaultIconIdentifier];
+    self.defaultIcon = [NSString iconFontEnumForIconIdentifier:defaultIconIdentifier];
 }
 
-- (void)setDefaultIcon:(FAIcon)defaultIcon
+- (void)setDefaultIcon:(XBFontIcon)defaultIcon
 {
     _defaultIcon = defaultIcon;
-    _defaultView.text = [NSString fontAwesomeIconStringForEnum:defaultIcon];
+    _defaultView.text = [NSString iconFontIconStringForEnum:defaultIcon];
 }
 
 @end

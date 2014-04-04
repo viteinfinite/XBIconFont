@@ -26,7 +26,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>fontawesome-webfont-ios7.ttf</string>
+		<string>xbiconfont.ttf</string>
 	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

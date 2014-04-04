@@ -1,6 +1,6 @@
 //
 //  XBViewController.m
-//  FontAwesome-iOS Demo
+//  XBIconFont Demo
 //
 //  Created by Alex Usbergo on 12/30/12.
 //  Copyright (c) 2012 Alex Usbergo. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "XBViewController.h"
 #import "NSString+XBIconFont.h"
-#import "XBImageView.h"
+#import "XBIconFontImageView.h"
 
 @interface XBViewController ()
 @property (nonatomic, strong) NSMutableArray *stars;
@@ -32,17 +32,17 @@
         UIButton *star = [UIButton buttonWithType:UIButtonTypeCustom];
         star.tag = i;
         star.frame = CGRectMake(60.f+(i *40.f), 200.f, 40.f, 40.f);
-        star.titleLabel.font = [UIFont fontWithName:kFontAwesomeFamilyName size:35];
+        star.titleLabel.font = [UIFont fontWithName:kXBIconFontFamilyName size:35];
         star.titleLabel.shadowOffset = CGSizeMake(0, -1);
-        [star setTitle:[NSString fontAwesomeIconStringForEnum:XBIFStar] forState:UIControlStateNormal];
-        [star setTitle:[NSString fontAwesomeIconStringForEnum:XBIFStar] forState:UIControlStateSelected];
+        [star setTitle:[NSString iconFontIconStringForEnum:XBIFStar] forState:UIControlStateNormal];
+        [star setTitle:[NSString iconFontIconStringForEnum:XBIFStar] forState:UIControlStateSelected];
         [star setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
         [star addTarget:self action:@selector(didSelectStar:) forControlEvents:UIControlEventTouchDown];
         [self.view addSubview:star];
         self.stars[i] = star;
     }
     
-    XBImageView *imageView = [[XBImageView alloc] initWithFrame:CGRectMake(0.f, 0.f, 100.f, 100.f)];
+    XBIconFontImageView *imageView = [[XBIconFontImageView alloc] initWithFrame:CGRectMake(0.f, 0.f, 100.f, 100.f)];
     imageView.image = nil;    
 
     

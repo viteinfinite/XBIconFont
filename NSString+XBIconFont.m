@@ -1,5 +1,5 @@
 //
-//  NSString+FontAwesome.m
+//  NSString+XBIconFont.m
 //
 //  Copyright (c) 2012 Alex Usbergo. All rights reserved.
 //
@@ -27,33 +27,33 @@
 @implementation NSString (XBIconFont)
 
 #pragma mark - Public API
-+ (FAIcon)fontAwesomeEnumForIconIdentifier:(NSString*)string {
++ (XBFontIcon)iconFontEnumForIconIdentifier:(NSString *)string {
     NSDictionary *enums = [self enumDictionary];
     return [enums[string] integerValue];
 }
 
-+ (NSString*)fontAwesomeIconStringForEnum:(FAIcon)value {
-    return [NSString fontAwesomeUnicodeStrings][value];
++ (NSString *)iconFontIconStringForEnum:(XBFontIcon)value {
+    return [NSString iconFontUnicodeStrings][value];
 }
 
-+ (NSString*)fontAwesomeIconStringForIconIdentifier:(NSString*)identifier {
-    return [self fontAwesomeIconStringForEnum:[self fontAwesomeEnumForIconIdentifier:identifier]];
++ (NSString *)iconFontIconStringForIconIdentifier:(NSString *)identifier {
+    return [self iconFontIconStringForEnum:[self iconFontEnumForIconIdentifier:identifier]];
 }
 
 
 #pragma mark - Data Initialization
-+ (NSArray *)fontAwesomeUnicodeStrings {
++ (NSArray *)iconFontUnicodeStrings {
     
-    static NSArray *fontAwesomeUnicodeStrings;
+    static NSArray *iconFontUnicodeStrings;
     
     static dispatch_once_t unicodeStringsOnceToken;
     dispatch_once(&unicodeStringsOnceToken, ^{
         
-        fontAwesomeUnicodeStrings = @[@"\uf095", @"\uf197", @"\uf198", @"\uf199", @"\uf19a", @"\uf19b", @"\uf19c", @"\uf19d", @"\uf19e"];
+        iconFontUnicodeStrings = @[@"\uf095", @"\uf197", @"\uf198", @"\uf199", @"\uf19a", @"\uf19b", @"\uf19c", @"\uf19d", @"\uf19e"];
 
     });
     
-    return fontAwesomeUnicodeStrings;
+    return iconFontUnicodeStrings;
 }
 
 + (NSDictionary *)enumDictionary {

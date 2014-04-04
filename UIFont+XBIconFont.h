@@ -1,5 +1,5 @@
 //
-//  UIFont+FontAwesome.m
+//  UIFont+XBIconFont.m
 //
 //  Copyright (c) 2012 Alex Usbergo. All rights reserved.
 //
@@ -27,8 +27,8 @@
 @interface UIFont (XBIconFont)
 
 /**
- @abstract Returns the FontAwesome iconic font.
+ @abstract Returns the XBIconFont iconic font.
  */
-+ (UIFont*)fontAwesomeFontOfSize:(CGFloat)size;
++ (UIFont*)iconFontOfSize:(CGFloat)size;
 
 @end

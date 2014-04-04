@@ -22,23 +22,23 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //
 //  An UIImageView with the support of displaying
-//  a vectorial icon (by using the fontawesome iconic font)
+//  a vectorial icon (by using the iconic font)
 //  if the image is missing
 
 
 #import <UIKit/UIKit.h>
 #import "NSString+XBIconFont.h"
 
-@interface XBImageView : UIImageView
+@interface XBIconFontImageView : UIImageView
 
 /* The background color for the default view displayed when the image is missing */
 @property (nonatomic, strong) UIColor *defaultIconColor UI_APPEARANCE_SELECTOR;
 
-/* Set the icon using the fontawesome icon's identifier */
+/* Set the icon using the icon's identifier */
 @property (nonatomic, strong) NSString *defaultIconIdentifier;
 
 /* Set the icon using the icon enumerations */
-@property (nonatomic, assign) FAIcon defaultIcon;
+@property (nonatomic, assign) XBFontIcon defaultIcon;
 
 /* The view that is displayed when the image is set to nil */
 @property (nonatomic, strong) UILabel *defaultView;

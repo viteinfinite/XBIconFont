@@ -1,5 +1,5 @@
 //
-//  NSString+FontAwesome.h
+//  NSString+XBIconFont.h
 //
 //  Copyright (c) 2012 Alex Usbergo. All rights reserved.
 //
@@ -24,12 +24,12 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString *const kFontAwesomeFamilyName = @"FontAwesome";
+static NSString *const kXBIconFontFamilyName = @"XBIconFont";
 
 /**
- @abstract FontAwesome Icons.
+ @abstract XBIconFont Icons.
  */
-typedef NS_ENUM(NSInteger, FAIcon) {
+typedef NS_ENUM(NSInteger, XBFontIcon) {
     XBIFPhone,
     XBIFDownload,
     XBIFShare,
@@ -46,20 +46,18 @@ typedef NS_ENUM(NSInteger, FAIcon) {
 @interface NSString (XBIconFont)
 
 /**
- @abstract Returns the correct enum for a font-awesome icon.
- @discussion The list of identifiers can be found here: http://fortawesome.github.com/Font-Awesome/#all-icons 
+ @abstract Returns the correct enum for an icon.
  */
-+ (FAIcon)fontAwesomeEnumForIconIdentifier:(NSString*)string;
++ (XBFontIcon)iconFontEnumForIconIdentifier:(NSString *)string;
 
 /**
- @abstract Returns the font-awesome character associated to the icon enum passed as argument 
+ @abstract Returns the character associated to the icon enum passed as argument
  */
-+ (NSString*)fontAwesomeIconStringForEnum:(FAIcon)value;
++ (NSString *)iconFontIconStringForEnum:(XBFontIcon)value;
 
 /* 
- @abstract Returns the font-awesome character associated to the font-awesome identifier.
- @discussion The list of identifiers can be found here: http://fortawesome.github.com/Font-Awesome/#all-icons
+ @abstract Returns the character associated to the identifier.
  */
-+ (NSString*)fontAwesomeIconStringForIconIdentifier:(NSString*)identifier;
++ (NSString *)iconFontIconStringForIconIdentifier:(NSString *)identifier;
 
 @end
