@@ -148,6 +148,10 @@
         tmp[@"xbif-compose"]		= @(XBIFCompose);
         tmp[@"xbif-undo"]			= @(XBIFUndo);
         tmp[@"xbif-star"]			= @(XBIFStar);
+        tmp[@"xbif-plus"]			= @(XBIFPlus);
+        tmp[@"xbif-info"]			= @(XBIFInfo);
+        tmp[@"xbif-left"]			= @(XBIFLeft);
+        tmp[@"xbif-right"]			= @(XBIFRight);
         icons = [NSDictionary dictionaryWithDictionary:tmp];
 	}
     return icons;
