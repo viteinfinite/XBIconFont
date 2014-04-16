@@ -38,7 +38,11 @@ typedef NS_ENUM(NSInteger, XBFontIcon) {
     XBIFBookmarks,
     XBIFCompose,
     XBIFUndo,
-    XBIFStar
+    XBIFStar,
+    XBIFPlus,
+    XBIFInfo,
+    XBIFLeft,
+    XBIFRight,
 };
 
 
@@ -48,16 +52,16 @@ typedef NS_ENUM(NSInteger, XBFontIcon) {
 /**
  @abstract Returns the correct enum for an icon.
  */
-+ (XBFontIcon)iconFontEnumForIconIdentifier:(NSString *)string;
++ (XBFontIcon)iconForIconName:(NSString *)string;
 
 /**
  @abstract Returns the character associated to the icon enum passed as argument
  */
-+ (NSString *)iconFontIconStringForEnum:(XBFontIcon)value;
++ (NSString *)stringForIconIdentifier:(XBFontIcon)value;
 
 /* 
  @abstract Returns the character associated to the identifier.
  */
-+ (NSString *)iconFontIconStringForIconIdentifier:(NSString *)identifier;
++ (NSString *)stringForIconName:(NSString *)identifier;
 
 @end

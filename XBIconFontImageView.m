@@ -74,13 +74,13 @@
 
 - (void)setDefaultIconIdentifier:(NSString*)defaultIconIdentifier
 {
-    self.defaultIcon = [NSString iconFontEnumForIconIdentifier:defaultIconIdentifier];
+    self.defaultIcon = [NSString iconForIconName:defaultIconIdentifier];
 }
 
 - (void)setDefaultIcon:(XBFontIcon)defaultIcon
 {
     _defaultIcon = defaultIcon;
-    _defaultView.text = [NSString iconFontIconStringForEnum:defaultIcon];
+    _defaultView.text = [NSString stringForIconIdentifier:defaultIcon];
 }
 
 @end

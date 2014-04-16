@@ -83,14 +83,14 @@
     XBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
-        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", [NSString iconFontIconStringForIconIdentifier:[self.iconSearchArray objectAtIndex:indexPath.row]], [self.iconSearchArray objectAtIndex:indexPath.row]];
-        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ %@", [NSString iconFontIconStringForIconIdentifier:[self.iconSearchArray objectAtIndex:indexPath.row]], [self.iconSearchArray objectAtIndex:indexPath.row]]];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", [NSString stringForIconName:[self.iconSearchArray objectAtIndex:indexPath.row]], [self.iconSearchArray objectAtIndex:indexPath.row]];
+        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ %@", [NSString stringForIconName:[self.iconSearchArray objectAtIndex:indexPath.row]], [self.iconSearchArray objectAtIndex:indexPath.row]]];
         [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:16] range:NSMakeRange(1, [cell.textLabel.text length] - 1)];
         [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:kXBIconFontFamilyName size:22] range:NSMakeRange(0, 1)];
         [cell.textLabel setAttributedText:attributedString];
     } else {
-        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", [NSString iconFontIconStringForIconIdentifier:[self.iconIdentiferArray objectAtIndex:indexPath.row]], [self.iconIdentiferArray objectAtIndex:indexPath.row]];
-        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ %@", [NSString iconFontIconStringForIconIdentifier:[self.iconIdentiferArray objectAtIndex:indexPath.row]], [self.iconIdentiferArray objectAtIndex:indexPath.row]]];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", [NSString stringForIconName:[self.iconIdentiferArray objectAtIndex:indexPath.row]], [self.iconIdentiferArray objectAtIndex:indexPath.row]];
+        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ %@", [NSString stringForIconName:[self.iconIdentiferArray objectAtIndex:indexPath.row]], [self.iconIdentiferArray objectAtIndex:indexPath.row]]];
         [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:16] range:NSMakeRange(1, [cell.textLabel.text length] - 1)];
         [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:kXBIconFontFamilyName size:22] range:NSMakeRange(0, 1)];
         [cell.textLabel setAttributedText:attributedString];

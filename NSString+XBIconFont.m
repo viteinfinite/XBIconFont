@@ -27,17 +27,17 @@
 @implementation NSString (XBIconFont)
 
 #pragma mark - Public API
-+ (XBFontIcon)iconFontEnumForIconIdentifier:(NSString *)string {
++ (XBFontIcon)iconForIconName:(NSString *)string {
     NSDictionary *enums = [self enumDictionary];
     return [enums[string] integerValue];
 }
 
-+ (NSString *)iconFontIconStringForEnum:(XBFontIcon)value {
++ (NSString *)stringForIconIdentifier:(XBFontIcon)value {
     return [NSString iconFontUnicodeStrings][value];
 }
 
-+ (NSString *)iconFontIconStringForIconIdentifier:(NSString *)identifier {
-    return [self iconFontIconStringForEnum:[self iconFontEnumForIconIdentifier:identifier]];
++ (NSString *)stringForIconName:(NSString *)identifier {
+    return [self stringForIconIdentifier:[self iconForIconName:identifier]];
 }
 
 
@@ -49,7 +49,7 @@
     static dispatch_once_t unicodeStringsOnceToken;
     dispatch_once(&unicodeStringsOnceToken, ^{
         
-        iconFontUnicodeStrings = @[@"\uf095", @"\uf197", @"\uf198", @"\uf199", @"\uf19a", @"\uf19b", @"\uf19c", @"\uf19d", @"\uf19e"];
+        iconFontUnicodeStrings = @[@"\uf095", @"\uf197", @"\uf198", @"\uf199", @"\uf19a", @"\uf19b", @"\uf19c", @"\uf19d", @"\uf19e", @"\uf19f", @"\uf1a0", @"\uf1a1", @"\uf1a2"];
 
     });
     
@@ -74,6 +74,10 @@
         tmp[@"xbif-compose"]		= @(XBIFCompose);
         tmp[@"xbif-undo"]			= @(XBIFUndo);
         tmp[@"xbif-star"]			= @(XBIFStar);
+        tmp[@"xbif-plus"]			= @(XBIFPlus);
+        tmp[@"xbif-info"]			= @(XBIFInfo);
+        tmp[@"xbif-left"]			= @(XBIFLeft);
+        tmp[@"xbif-right"]			= @(XBIFRight);
         
 		enumDictionary = tmp;
 	});

@@ -34,8 +34,8 @@
         star.frame = CGRectMake(60.f+(i *40.f), 200.f, 40.f, 40.f);
         star.titleLabel.font = [UIFont fontWithName:kXBIconFontFamilyName size:35];
         star.titleLabel.shadowOffset = CGSizeMake(0, -1);
-        [star setTitle:[NSString iconFontIconStringForEnum:XBIFStar] forState:UIControlStateNormal];
-        [star setTitle:[NSString iconFontIconStringForEnum:XBIFStar] forState:UIControlStateSelected];
+        [star setTitle:[NSString stringForIconIdentifier:XBIFStar] forState:UIControlStateNormal];
+        [star setTitle:[NSString stringForIconIdentifier:XBIFStar] forState:UIControlStateSelected];
         [star setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
         [star addTarget:self action:@selector(didSelectStar:) forControlEvents:UIControlEventTouchDown];
         [self.view addSubview:star];
