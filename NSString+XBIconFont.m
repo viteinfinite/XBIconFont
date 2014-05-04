@@ -49,7 +49,7 @@
     static dispatch_once_t unicodeStringsOnceToken;
     dispatch_once(&unicodeStringsOnceToken, ^{
         
-        iconFontUnicodeStrings = @[@"\uf095", @"\uf197", @"\uf198", @"\uf199", @"\uf19a", @"\uf19b", @"\uf19c", @"\uf19d", @"\uf19e", @"\uf19f", @"\uf1a0", @"\uf1a1", @"\uf1a2"];
+        iconFontUnicodeStrings = @[@"\uf095", @"\uf197", @"\uf198", @"\uf199", @"\uf19a", @"\uf19b", @"\uf19c", @"\uf19d", @"\uf19e", @"\uf19f", @"\uf1a0", @"\uf1a1", @"\uf1a2", @"\uf1a3", @"\uf1a4"];
 
     });
     
@@ -78,6 +78,8 @@
         tmp[@"xbif-info"]			= @(XBIFInfo);
         tmp[@"xbif-left"]			= @(XBIFLeft);
         tmp[@"xbif-right"]			= @(XBIFRight);
+        tmp[@"xbif-down"]			= @(XBIFDown);
+        tmp[@"xbif-up"]             = @(XBIFUp);
         
 		enumDictionary = tmp;
 	});

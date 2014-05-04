@@ -43,6 +43,8 @@ typedef NS_ENUM(NSInteger, XBFontIcon) {
     XBIFInfo,
     XBIFLeft,
     XBIFRight,
+    XBIFDown,
+    XBIFUp,
 };
 
 

@@ -152,6 +152,8 @@
         tmp[@"xbif-info"]			= @(XBIFInfo);
         tmp[@"xbif-left"]			= @(XBIFLeft);
         tmp[@"xbif-right"]			= @(XBIFRight);
+        tmp[@"xbif-down"]			= @(XBIFDown);
+        tmp[@"xbif-up"]             = @(XBIFUp);
         icons = [NSDictionary dictionaryWithDictionary:tmp];
 	}
     return icons;
