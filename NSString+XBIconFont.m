@@ -80,8 +80,8 @@
         tmp[@"xbif-right"]			= @(XBIFRight);
         tmp[@"xbif-down"]			= @(XBIFDown);
         tmp[@"xbif-up"]             = @(XBIFUp);
-        tmp[@"xbif-undo-fill"]		= @(XBIFStarFill);
-        tmp[@"xbif-star-fill"]		= @(XBIFUndoFill);
+        tmp[@"xbif-undo-fill"]		= @(XBIFUndoFill);
+        tmp[@"xbif-star-fill"]		= @(XBIFStarFill);
         
 		enumDictionary = tmp;
 	});
