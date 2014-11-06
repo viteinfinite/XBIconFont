@@ -45,6 +45,8 @@ typedef NS_ENUM(NSInteger, XBFontIcon) {
     XBIFRight,
     XBIFDown,
     XBIFUp,
+    XBIFStarFill,
+    XBIFUndoFill
 };
 
 

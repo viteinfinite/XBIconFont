@@ -147,7 +147,9 @@
         tmp[@"xbif-bookmarks"]		= @(XBIFBookmarks);
         tmp[@"xbif-compose"]		= @(XBIFCompose);
         tmp[@"xbif-undo"]			= @(XBIFUndo);
+        tmp[@"xbif-undo-fill"]		= @(XBIFUndoFill);
         tmp[@"xbif-star"]			= @(XBIFStar);
+        tmp[@"xbif-star-fill"]		= @(XBIFStarFill);
         tmp[@"xbif-plus"]			= @(XBIFPlus);
         tmp[@"xbif-info"]			= @(XBIFInfo);
         tmp[@"xbif-left"]			= @(XBIFLeft);
